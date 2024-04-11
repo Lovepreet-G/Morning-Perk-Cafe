@@ -1,0 +1,80 @@
+extends common/layout
+
+block layout-content
+    
+    .container.mt-5
+        .row
+            .col-md-6
+                .recipe-details
+                    h2 #{title}
+                    h4 Ingredients
+                    ul
+                        each ingredient in recipeingredients
+                            li #{ingredient.name}
+                    h4 Follow the following recipe steps
+                    each temp in recipesteps  
+                        ol 
+                            each temp1 in temp.steps
+                                li #{temp1.step} 
+                    h4 Summary 
+                    p!= summary
+            .col-md-6
+                img(src=`${image}`, alt="product image" class="img-fluid mb-3 border shadow")
+                div#map
+                    script.
+                        function createMap() 
+                        {
+                            const map = new google.maps.Map(document.getElementById("map"), 
+                            {
+                                center: { lat: 43.683334, lng: -79.766670},
+                                zoom: 12
+                            });
+                            displayShops(map);
+                        }
+                        function GoogleMaps(callback) 
+                        {
+                            const script = document.createElement('script');
+                            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgPchi8F1jfpiURmXSFG8DIKxDhJdQP0&callback=${callback}&libraries=places`;
+                            document.body.appendChild(script);
+                        }
+
+                        function displayShops(map) 
+                        {
+                            const request = {
+                                location: 
+                                { 
+                                    lat: 43.683234, lng: -79.766670 
+                                },
+                                radius: 4000,
+                                type: 'Coffee_shop',
+                                key: 'AIzaSyDqgPchi8F1jfpiURmXSFG8DIKxDhJdQP0'
+                            };
+
+                            const service = new google.maps.places.PlacesService(map);
+                            service.nearbySearch(request, (results, status) => {
+                                if (status === google.maps.places.PlacesServiceStatus.OK) 
+                                {
+                                    for (let i = 0; i < results.length; i++) 
+                                    {
+                                        const shop = results[i];
+                                        const pointer = new google.maps.Marker({
+                                            position: shop.geometry.location,
+                                            map: map,
+                                            title: shop.name,
+                                            label: {
+                                                text: shop.name,
+                                                color: 'Blue',
+                                                fontSize: '10px',
+                                                fontWeight: 'bold'
+                                            }
+                                        });
+                                        google.maps.event.addListener(pointer , 'click', function() 
+                                        {
+                                            window.location.href = `https://www.google.com/maps/search/?api=1&query=${place.name}&query_place_id=${place.place_id}`;
+                                        });
+                                    }
+                                } 
+                            });
+                        }
+
+                        GoogleMaps('createMap');

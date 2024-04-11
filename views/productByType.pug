@@ -1,0 +1,16 @@
+extends common/layout
+
+block layout-content
+    div.text-center
+        h1 #{title}
+    div.d-flex.flex-wrap.gap-3
+        each product in results 
+            .card(style="width: 18rem;")
+                img.card-img-top(src=`https://img.spoonacular.com/recipes/${product.image}`, alt="")
+                .card-body
+                    h5.card-title #{product.title}
+                    p.card-text Ready in #{product.readyInMinutes} Minutes
+                    p.card-text #{product.servings} Serving
+                    form(action='/viewRecipe', method='get')
+                        input(type='hidden', name='productId', value=product.id)
+                        button.btn.btn-primary(type='submit') View Recipe

@@ -1,0 +1,27 @@
+extends common/layout
+
+block layout-content
+    .text-center
+        h1 #{title}
+    div.d-flex.justify-content-center
+        div.w-50.add-product
+            form.w-100(action='/create/submit', method='post')
+                .form-group.p-1
+                    label(for='name') Product Name:
+                    input.form-control(type='text',id ='name' name='name', required)
+                .form-group.p-1
+                    label(for='type') Product Type:
+                    select.form-control(name='type',id ='type', required)
+                        option(value='', selected, disabled) Select a type
+                        option(value='Coffee') Coffee
+                        option(value='Pastry') Pastry
+                        option(value='Tea') Tea
+                        option(value='Smoothie') Smoothie
+                .form-group.p-1
+                    label(for='price') Price:
+                    input.form-control(type='number', id='price',name='price', required)
+                .form-group.p-1
+                    label(for='description') Description:
+                    textarea.form-control(name='description',id='description', required)
+                button.btn.btn-primary(type='submit') Add Product
+

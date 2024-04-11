@@ -1,0 +1,65 @@
+/* colors */
+:root
+{
+  --bk-color: #FFBE98;
+  --primary-1-color: #E2BFB3;
+  --primary-2-color: #F7DED0;
+  --border-color: #FEECE2;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bk-color);
+}
+.navbar
+{
+  background-color: var(--border-color);
+}
+
+
+A:hover
+{
+  text-decoration: underline;
+  text-shadow: var(--primary-2-color) 0.5px 0.2px;
+}
+button[type="submit"]
+{
+  background-color: var(--bk-color); 
+  border-color: var(--border-color);
+}
+button[type="submit"]:hover 
+{
+  background-color: #daa281; 
+  border-color: #daa281; 
+}
+.card
+{
+  width: 18rem; 
+  height: auto; 
+  border: 2px solid var(--border-color); 
+  border-radius: 10px; 
+}
+.card-title
+{
+  color: var(--bk-color);
+}
+.card:hover
+{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.form-control
+{
+  border-color: var(--primary-1-color);
+}
+.add-product
+{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 8px;
+}
+#map{
+  height: 400px; 
+  width: 100%; 
+}

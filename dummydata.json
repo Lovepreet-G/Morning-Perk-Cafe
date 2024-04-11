@@ -1,0 +1,177 @@
+[
+    {
+      "name": "Caramel Macchiato",
+      "type": "Coffee",
+      "price": 4.99,
+      "description": "Espresso with steamed milk and caramel syrup."
+    },
+    {
+      "name": "Blueberry Muffin",
+      "type": "Pastry",
+      "price": 2.49,
+      "description": "A classic blueberry muffin with a hint of cinnamon."
+    },
+    {
+      "name": "Iced Latte",
+      "type": "Coffee",
+      "price": 3.99,
+      "description": "Chilled espresso with milk and ice cubes."
+    },
+    {
+      "name": "Chocolate Croissant",
+      "type": "Pastry",
+      "price": 2.99,
+      "description": "Flaky croissant filled with rich chocolate."
+    },
+    {
+      "name": "Matcha Latte",
+      "type": "Tea",
+      "price": 4.49,
+      "description": "Green tea powder mixed with steamed milk."
+    },
+    {
+      "name": "Cinnamon Roll",
+      "type": "Pastry",
+      "price": 3.49,
+      "description": "Soft cinnamon roll topped with cream cheese frosting."
+    },
+    {
+      "name": "Americano",
+      "type": "Coffee",
+      "price": 2.99,
+      "description": "Diluted espresso with hot water for a strong black coffee."
+    },
+    {
+      "name": "Fruit Smoothie",
+      "type": "Smoothie",
+      "price": 5.99,
+      "description": "A refreshing blend of mixed fruits and yogurt."
+    },
+    {
+      "name": "Bagel with Cream Cheese",
+      "type": "Breakfast",
+      "price": 3.29,
+      "description": "Toasted bagel served with a generous spread of cream cheese."
+    },
+    {
+      "name": "Cappuccino",
+      "type": "Coffee",
+      "price": 4.49,
+      "description": "Espresso with equal parts of steamed milk and foam."
+    },
+    {
+      "name": "Hazelnut Latte",
+      "type": "Coffee",
+      "price": 4.79,
+      "description": "Espresso with steamed milk and hazelnut flavoring."
+    },
+    {
+      "name": "Chocolate Chip Cookie",
+      "type": "Pastry",
+      "price": 1.99,
+      "description": "Soft and chewy cookie loaded with chocolate chips."
+    },
+    {
+      "name": "Chai Tea Latte",
+      "type": "Tea",
+      "price": 3.99,
+      "description": "Spiced black tea with steamed milk and honey."
+    },
+    {
+      "name": "Blue Raspberry Smoothie",
+      "type": "Smoothie",
+      "price": 5.49,
+      "description": "Cool and vibrant smoothie with blue raspberry flavor."
+    },
+    {
+      "name": "Ham and Cheese Croissant",
+      "type": "Pastry",
+      "price": 4.29,
+      "description": "Buttery croissant filled with ham and melted cheese."
+    },
+    {
+      "name": "Iced Mocha",
+      "type": "Coffee",
+      "price": 4.29,
+      "description": "Chilled espresso with chocolate syrup and cold milk."
+    },
+    {
+      "name": "Vanilla Scone",
+      "type": "Pastry",
+      "price": 2.79,
+      "description": "Delicate scone flavored with vanilla and drizzled with icing."
+    },
+    {
+      "name": "Green Tea Frappuccino",
+      "type": "Tea",
+      "price": 5.99,
+      "description": "Blended frappuccino with green tea, ice, and sweetened milk."
+    },
+    {
+      "name": "Cranberry Orange Muffin",
+      "type": "Pastry",
+      "price": 3.49,
+      "description": "Moist muffin with cranberries and a hint of orange zest."
+    },
+    {
+      "name": "Flat White",
+      "type": "Coffee",
+      "price": 4.79,
+      "description": "A strong coffee drink with microfoam, similar to a latte."
+    },
+    {
+      "name": "Raspberry Lemonade",
+      "type": "Beverage",
+      "price": 3.99,
+      "description": "Refreshing lemonade with a burst of raspberry flavor."
+    },
+    {
+      "name": "Almond Croissant",
+      "type": "Pastry",
+      "price": 3.79,
+      "description": "Flaky croissant filled with almond paste and topped with sliced almonds."
+    },
+    {
+      "name": "Espresso Brownie",
+      "type": "Dessert",
+      "price": 2.99,
+      "description": "Rich and fudgy brownie infused with espresso for a bold flavor."
+    },
+    {
+      "name": "Mango Tango Smoothie",
+      "type": "Smoothie",
+      "price": 5.49,
+      "description": "Tropical smoothie with mango, pineapple, and banana."
+    },
+    {
+      "name": "Cinnamon Apple Muffin",
+      "type": "Pastry",
+      "price": 3.49,
+      "description": "Spiced muffin with chunks of fresh apple and a cinnamon streusel topping."
+    },
+    {
+      "name": "Turmeric Latte",
+      "type": "Tea",
+      "price": 4.99,
+      "description": "Golden latte made with turmeric, ginger, and honey."
+    },
+    {
+      "name": "Pesto Chicken Panini",
+      "type": "Sandwich",
+      "price": 6.99,
+      "description": "Grilled panini with pesto-marinated chicken, mozzarella, and sun-dried tomatoes."
+    },
+    {
+      "name": "Pumpkin Spice Latte",
+      "type": "Coffee",
+      "price": 5.29,
+      "description": "Seasonal favorite with espresso, steamed milk, and pumpkin spice."
+    },
+    {
+      "name": "Lemon Poppy Seed Muffin",
+      "type": "Pastry",
+      "price": 2.99,
+      "description": "Light and zesty muffin filled with poppy seeds and a lemon glaze."
+    }
+  ]
+    
